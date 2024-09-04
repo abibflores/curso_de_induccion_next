@@ -1,4 +1,5 @@
 import { Card } from "@/components/Card/Card"
+import { Character } from "@/types"
 
 function Home({ data }: { data: Character}) {
     return (

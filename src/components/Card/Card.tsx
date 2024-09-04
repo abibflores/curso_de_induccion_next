@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styles from "./Card.module.css"
+import { Character } from "@/types"
 
 export const Card = ({ data }: { data: Character }) => {
     // crea un componente Card que recibe un objeto data de tipo Character con iamgen y todos los datos del personaje
