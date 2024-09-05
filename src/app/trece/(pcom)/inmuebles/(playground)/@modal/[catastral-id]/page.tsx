@@ -1,7 +1,8 @@
 // app/@modal/page.tsx
 import Link from "next/link";
 import styles from "./modal.module.css";
-export default function ModalPage() {
+export default function ModalPage(props: any) {
+  console.log(props, "modal");
   return (
     <div className={styles.modal}>
       <div className={styles.modal_content}>

@@ -2,7 +2,7 @@
 import styles from "./sidebar.module.css"
 export default async function SidebarPage(props: any) {
   const data = await fetch('https://rickandmortyapi.com/api/location').then(res => res.json())
-  console.log(props, "params")
+  console.log(props, "sidebar")
   return (
     <div className={styles.container}>
       { data.results.map((location: any) => (

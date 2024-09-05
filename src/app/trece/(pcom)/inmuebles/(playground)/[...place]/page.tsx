@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export default function ColoniaPage() {
   return (
     <div>
-      colonia
+      place
     </div>
   );
 }
