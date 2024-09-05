@@ -3,8 +3,8 @@ import Image from "next/image"
 import styles from "./Persons.module.css"
 
 export const Persons = async () => {
-    const data = await fetch('https://rickandmortyapi.com/api/character').then(res => res.json())
-
+    const data = await fetch('https://rickandmortyapi.com/api/character/65436456453').then(res => res.json())
+    
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Persons</h1>
