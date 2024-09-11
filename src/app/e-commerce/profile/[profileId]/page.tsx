@@ -1,7 +1,6 @@
 // app/users/[id]/page.tsx
 import React from 'react';
 import styles from './styles/singleProfile.module.css';
-import MiniCard from '@/components/ecommerce/MiniCard/Minicard';
 
 type User = {
   id: number;
@@ -31,6 +30,44 @@ const fetchUser = async (id: string): Promise<User> => {
 type UserPageProps = {
   params: { profileId: string };
 };
+
+export async function generateMetadata ({ params }: UserPageProps) {
+  const user = await fetchUser(params.profileId);
+
+  return {
+    title: `${user.name.firstname} ${user.name.lastname}`,
+    description: `User Profile: ${user.username}`,
+    alternates: {
+      canonical: `/e-commerce/profile/${params.profileId}`
+    },
+    openGraph: {
+      title: `${user.name.firstname} ${user.name.lastname}`,
+      description: `User Profile: ${user.username}`,
+      url: `/e-commerce/profile/${params.profileId}`,
+      siteName: 'E-commerce',
+      images: [
+        {
+          url: `/api/og/${params.profileId}`,
+          alt: 'user-profile'
+        }
+      ],
+      locale: 'en_MX',
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${user.name.firstname} ${user.name.lastname}`,
+      description: `User Profile: ${user.username}`,
+      siteId: '',
+      creator: '@rifamania',
+      creatorId: '',
+      images: {
+        url: `/api/og/${params.profileId}`,
+        alt: 'user-profile'
+      }
+    }
+  }
+}
 
 export default async function UserProfilePage({ params }: UserPageProps) {
   const user = await fetchUser(params.profileId);
