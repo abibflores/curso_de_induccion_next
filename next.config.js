@@ -45,7 +45,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   const nextConfig = {
     reactStrictMode: false,
     images: {
-      domains: ['rickandmortyapi.com'],
+      domains: ['rickandmortyapi.com', 'fakestoreapi.com'],
     },
     ...customCorsHeaders,
   };
