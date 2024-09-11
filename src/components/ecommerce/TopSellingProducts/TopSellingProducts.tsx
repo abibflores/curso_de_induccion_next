@@ -13,6 +13,8 @@ type Product = {
 };
 
 const fetchTopSellingProducts = async (): Promise<Product[]> => {
+  // haz que esta peticion demore 5 segundos
+  await new Promise((resolve) => setTimeout(resolve, 5000));
   const res = await fetch('https://fakestoreapi.com/products', { next: { revalidate: 3600 } });
   if (!res.ok) {
     throw new Error('Failed to fetch products');
@@ -35,6 +37,7 @@ const TopSellingProducts: React.FC = async () => {
               className={styles.productImage}
               width={300}
               height={400}
+              loading='lazy'
             />
             <div className={styles.productInfo}>
               <h3 className={styles.productTitle}>{product.title}</h3>

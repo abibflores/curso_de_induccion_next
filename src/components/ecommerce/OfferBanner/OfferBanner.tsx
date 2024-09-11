@@ -34,6 +34,7 @@ const OfferBanner: React.FC = async () => {
           className={styles.productImage}
             width={300}
             height={400}
+            loading='lazy'
         />
       </div>
       <div className={styles.details}>

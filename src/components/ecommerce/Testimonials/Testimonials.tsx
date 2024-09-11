@@ -37,6 +37,7 @@ const Testimonials: React.FC = async () => {
                 className={styles.avatarImage}
                 width={150}
                 height={150}
+                loading='lazy'
               />
             </div>
             <div className={styles.testimonialInfo}>

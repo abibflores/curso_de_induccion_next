@@ -37,6 +37,7 @@ const PopularJewelry: React.FC = async () => {
               className={styles.productImage}
                 width={300}
                 height={400}
+                loading='lazy'
             />
             <div className={styles.productInfo}>
               <h3 className={styles.productTitle}>{product.title}</h3>
