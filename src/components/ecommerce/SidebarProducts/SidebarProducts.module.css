@@ -1,0 +1,50 @@
+/* styles/SidebarProducts.module.css */
+.sidebar {
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .productList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .productItem {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+  }
+  
+  .productLink {
+    text-decoration: none;
+    color: #0070f3;
+    transition: color 0.3s;
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+
+  .img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+  
+  .productItem:hover {
+    background: #f9f9f9;
+  }
+  

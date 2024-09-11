@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './styles/products.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Product = {
   id: number;
@@ -42,6 +43,7 @@ export default async function ProductsPage() {
               <p className={styles.productPrice}>${product.price.toFixed(2)}</p>
               <button className={styles.addToCartButton}>Add to Cart</button>
             </div>
+              <Link className={styles.link} href={`/e-commerce/${product.id}`}>ver detalle</Link>
           </div>
         ))}
       </div>

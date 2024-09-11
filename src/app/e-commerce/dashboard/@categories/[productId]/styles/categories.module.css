@@ -1,0 +1,43 @@
+/* styles/Categories.module.css */
+.container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .categoryList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .categoryItem {
+    font-size: 1.25rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+
+  }
+  
+  .categoryItem:hover {
+    color: #0070f3;
+    cursor: pointer;
+  }
+  

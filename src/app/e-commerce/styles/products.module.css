@@ -67,3 +67,10 @@
 .addToCartButton:hover {
   background-color: #005bb5;
 }
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  font-weight: 600;
+}

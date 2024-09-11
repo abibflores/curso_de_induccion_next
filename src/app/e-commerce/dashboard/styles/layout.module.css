@@ -1,0 +1,79 @@
+/* src/app/layout.module.css */
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "sidebar product product similar similar"
+    "sidebar categories categories categories categories"
+    "sidebar mostSold mostSold mostSold mostSold";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Ahora hay 5 columnas */
+  grid-template-rows: auto 1fr auto;
+  gap: 20px;
+}
+  
+  .header {
+    grid-area: header;
+    background-color: #0070f3;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productDetail {
+    grid-area: product;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .similarProducts {
+    grid-area: similar;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .categories {
+    grid-area: categories;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mostSold {
+    grid-area: mostSold;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 1200px) {
+    .grid {
+      grid-template-areas:
+        "header"
+        "sidebar"
+        "product"
+        "similar"
+        "categories"
+        "mostSold";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+  
+  
