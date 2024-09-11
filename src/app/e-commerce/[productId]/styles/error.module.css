@@ -1,0 +1,42 @@
+/* styles/ErrorComponent.module.css */
+.errorContainer {
+    padding: 20px;
+    background-color: #ffe5e5;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    text-align: center;
+    color: #ff0000;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .errorTitle {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+  }
+  
+  .errorMessage {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .retryButton {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .retryButton:hover {
+    background-color: #cc0000;
+  }
+  
