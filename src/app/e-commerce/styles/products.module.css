@@ -6,9 +6,11 @@
 }
 
 .title {
+  font-family: var(--font-dosis);
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .productsGrid {
