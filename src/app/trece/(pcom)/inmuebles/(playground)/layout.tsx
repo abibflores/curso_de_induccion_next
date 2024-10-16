@@ -4,7 +4,8 @@
 import { useSelectedLayoutSegments } from "next/navigation";
 import styles from "./layout.module.css";
 import { HeaderPcom } from "@/components/pcom/HeaderPcom";
-export default function RootLayout({ children, modal, header, mapa, sidebar }: { children: React.ReactNode, modal: React.ReactNode, header: React.ReactNode, mapa: React.ReactNode, sidebar: React.ReactNode }) {
+
+export default function Layout({ children, modal, mapa, sidebar }: { children: React.ReactNode, modal: React.ReactNode, mapa: React.ReactNode, sidebar: React.ReactNode }) {
   const segment = useSelectedLayoutSegments();
   const isMap = segment && segment[0].includes("mapa");
   console.log(segment, "segment")
