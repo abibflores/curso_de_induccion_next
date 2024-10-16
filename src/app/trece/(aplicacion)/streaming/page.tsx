@@ -13,9 +13,6 @@ export default function Posts() {
       <Suspense fallback={<SkeletonLocations />}>
         <Locations />
       </Suspense>
-      <Suspense fallback={<SkeletonPersons />}>
-        <Persons />
-      </Suspense>
     </section>
   )
 }
