@@ -2,7 +2,7 @@ import { Dosis } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 
-export const dosis = Dosis({
+const dosis = Dosis({
     weight: ['300', '500', '700'],
     subsets: ['latin'],
     variable: '--font-dosis',
