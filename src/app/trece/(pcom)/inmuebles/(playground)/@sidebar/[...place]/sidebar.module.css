@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px 20px 8px 20px;
+    min-height: 80vh;
+    background-color:blanchedalmond;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+.card_item {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: black;
+    height: 100px;
+    flex: none;
+    padding: 10px;
+}
+
+.card_item_name {
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.card_item_type {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.card_item_dimension {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 5px;
+}

@@ -1,0 +1,94 @@
+/* styles/HeroProduct.module.css */
+
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .heroImageWrapper {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .heroImage {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heroDetails {
+    flex: 2;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .heroPrice {
+    font-size: 2rem;
+    color: #0070f3;
+    margin-top: 10px;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .heroButton {
+    margin-top: 30px;
+    background-color: #0070f3;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .heroButton:hover {
+    background-color: #005bb5;
+  }
+  
+  @media (max-width: 768px) {
+    .heroContainer {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .heroImage {
+      max-width: 200px;
+    }
+  
+    .heroTitle {
+      font-size: 2rem;
+    }
+  
+    .heroPrice {
+      font-size: 1.75rem;
+    }
+  
+    .heroDescription {
+      font-size: 1rem;
+    }
+  
+    .heroButton {
+      font-size: 1rem;
+    }
+  }
+  

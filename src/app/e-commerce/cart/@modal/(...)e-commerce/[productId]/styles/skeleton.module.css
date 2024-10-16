@@ -1,0 +1,92 @@
+/* styles/SkeletonModal.module.css */
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: #e0e0e0;
+    }
+    100% {
+      background-color: #c0c0c0;
+    }
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .modalCloseButton {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    animation: skeleton-loading 1.5s infinite alternate;
+  }
+  
+  .skeletonTitle {
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    animation: skeleton-loading 1.5s infinite alternate;
+  }
+  
+  .skeletonImage {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    animation: skeleton-loading 1.5s infinite alternate;
+  }
+  
+  .skeletonDescription {
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    animation: skeleton-loading 1.5s infinite alternate;
+  }
+  
+  .skeletonPrice {
+    width: 40%;
+    height: 25px;
+    border-radius: 5px;
+    animation: skeleton-loading 1.5s infinite alternate;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .modal {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .skeletonTitle {
+      width: 80%;
+    }
+  
+    .skeletonDescription {
+      width: 90%;
+    }
+  
+    .skeletonPrice {
+      width: 50%;
+    }
+  }
+  
