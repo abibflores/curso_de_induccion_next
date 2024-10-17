@@ -1,5 +1,11 @@
 import { Dosis } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import dynamic from 'next/dynamic'
+
+ // Load the Footer component dynamically with name export
+const Footer = dynamic(() =>
+  import('@/components/ecommerce/Footer/Footer').then((mod) => mod.Footer)
+)
 
 
 const dosis = Dosis({
@@ -23,7 +29,11 @@ export default function EcommerceLayout({
         {(GA_TRACKING_ID && GA_TRACKING_ID !== "G-DEMO") && (
             <GoogleAnalytics gaId={GA_TRACKING_ID} />
         )}
-        <body >{children}</body>
+        <body>
+            {children}
+          {/* Load immediately, but in a separate client bundle */}
+          <Footer />
+        </body>
       </html>
     );
   }

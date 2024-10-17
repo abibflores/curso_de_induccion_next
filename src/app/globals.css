@@ -47,13 +47,3 @@ header {
   text-align: center;
 }
 
-footer {
-  background-color: #0070f3;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
