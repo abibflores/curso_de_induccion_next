@@ -1,0 +1,67 @@
+/* styles/HeroeVideo.module.css */
+
+.heroContainer {
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+  margin: 16px auto;
+}
+
+.videoPoster {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio de 16:9 */
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.posterImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.skeleton {
+  width: 100%;
+  height: 450px;
+  background-color: #ddd;
+  border-radius: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  outline: none;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './styles/products.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import { HeroeVideo } from '@/components/ecommerce/HeroeVideo/HeroeVideo';
 
 type Product = {
   id: number;
@@ -34,6 +35,7 @@ export default async function ProductsPage() {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Fake Store Products</h1>
+      <HeroeVideo />
       <div className={styles.productsGrid}>
         {products.map((product) => (
           <div key={product.id} className={styles.productCard}>
