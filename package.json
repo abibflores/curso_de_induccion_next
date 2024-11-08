@@ -12,10 +12,12 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.21.1",
     "@next/third-parties": "^14.2.15",
+    "@types/styled-components": "^5.1.34",
     "antd": "^5.20.5",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.7",

@@ -1,0 +1,37 @@
+/* styles/HomeSection.module.css */
+
+.homeContainer {
+  background: linear-gradient(135deg, #0B6623, #008000);
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.ctaButton {
+  background-color: #fff;
+  color: #0B6623;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: #f0f0f0;
+}
