@@ -7,19 +7,19 @@ export const Footer = () =>{
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.linksSection}>
-          <Link href="/" className={styles.link}>
+          <Link href="/e-commerce" className={styles.link}>
             Home
           </Link>
-          <Link href="/landing" className={styles.link}>
+          <Link href="/e-commerce/landing" className={styles.link}>
             Landing
           </Link>
-          <Link href="/dashboard" className={styles.link}>
+          <Link href="/e-commerce/dashboard/1" className={styles.link}>
             Dashboard
           </Link>
-          <Link href="/cart" className={styles.link}>
+          <Link href="/e-commerce/cart" className={styles.link}>
             Cart
           </Link>
-          <Link href="/profile" className={styles.link}>
+          <Link href="/e-commerce/profile/1" className={styles.link}>
             Profile
           </Link>
         </div>
