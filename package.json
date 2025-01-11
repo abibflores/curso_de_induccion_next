@@ -14,6 +14,7 @@
     "@next/third-parties": "^14.2.15",
     "@types/styled-components": "^5.1.34",
     "antd": "^5.20.5",
+    "contentful": "^11.4.2",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
